@@ -111,7 +111,6 @@ header button {
 .header__theme-menu-item:focus {
   border-bottom: 1px solid var(--decoration-color);
 }
-
 .header__theme-menu-button {
   appearance: none;
   background: transparent;
@@ -486,12 +485,8 @@ h4 {
 .how div h3 {
   font-weight: 400;
 }
-
 img {
   width: 99%;
-}
-.p-link {
-  text-shadow: 1px 0px 0 var(--h3-bc);
 }
 section {
   margin-bottom: 48px;
@@ -528,35 +523,7 @@ footer h5 {
   padding-top: 435px;
   font-size: 116px;
 }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (width >= 1024px) {
 .page {
