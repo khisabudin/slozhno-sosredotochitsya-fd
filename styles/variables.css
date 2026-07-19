@@ -2,3 +2,26 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --bc-image-link: url('../images/cover-image-dark.png');
+  --bc-color: #000028;
+  --header-text-color: #000028;
+  --header-text-bc: #FF0070;
+  --accent-color: #000028;
+  --h3-bc: #ff0070;
+  --div-p-text: #F1B2CE;
+  --footer-title: #DB00FF;
+  --footer-text-shadow: var(--accent-color);
+
+  --h1-color: #DB00FF;
+  --h1-shadow: #FF0070;
+  --header-text-color: #000028;
+  --header-text-bc: #FF0070;
+  --h2-color: #FF0070;
+  --h3-color: #000028;
+  --h3-bc: #FF0070;
+  --div-p-text: #F1B2CE;
+  --decoration-color: #FF0070;
+  --angles-color : #FF0070;
+
+}
