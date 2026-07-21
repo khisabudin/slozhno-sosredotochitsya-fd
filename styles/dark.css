@@ -9,6 +9,22 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --h1-color: #000028;
+  --h1-bc: #FF0070;
   --bc-image-link: url('../images/cover-image-dark.png');
   --accent-color: #000028;
+  --h2-color: #FF0070;
+  --h3-color: #000028;
+  --h3-bc: #ff0070;
+  --bc-color: #000028;
+  --header-text-color: #000028;
+  --header-text-bc: #FF0070;
+  --div-p-text: #F1B2CE;
+  --footer-title: #DB00FF;
+  --footer-text-shadow: var(--header-text-bc);
+  --angles-color: #FF0070;
+  --rec-tumbler: block;
+  --circle-color: var(--decoration-color);
+  --circle-shadow: 0 0 4px var(--decoration-color);
+  --button-color: var(--angles-color);
 }
