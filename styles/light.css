@@ -22,6 +22,7 @@
   --footer-text-shadow: #FF8DCB;
   --angles-color : #353430;
   --button-color: var(--angles-color);
+  --button-color-transparent: #32312D66;
 }
 @media (prefers-color-scheme: light) {
 :root {
@@ -47,5 +48,6 @@
   --footer-text-shadow: #FF8DCB;
   --angles-color : #353430;
   --button-color: var(--angles-color);
+  --button-color-transparent: #32312D66;
 }
 }

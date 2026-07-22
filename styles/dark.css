@@ -27,4 +27,5 @@
   --circle-color: var(--decoration-color);
   --circle-shadow: 0 0 4px var(--decoration-color);
   --button-color: var(--angles-color);
+  --button-color-transparent: #FF007066;
 }

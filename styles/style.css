@@ -23,9 +23,6 @@
   padding: 0px;
   box-sizing: border-box;
 }
-footer.decorated-zone {
-  --circle-color: transparent;
-}
 .decorated-zone::before {
   content: "";
   position: absolute;
@@ -35,8 +32,6 @@ footer.decorated-zone {
   height: 25px;
   border-top: 1px solid var(--angles-color);
   border-right: 1px solid var(--angles-color);
-  background: radial-gradient(circle, var(--circle-color) 0%, var(--circle-color) 4.5px, transparent 4.5px) no-repeat top right;
-  filter: drop-shadow(0 0 4px var(--circle-color));
 }
 .decorated-zone::after {
   content: "";
@@ -66,19 +61,30 @@ footer.decorated-zone {
   font-family: 'IBM plex Mono', monospace;
   display: var(--rec-tumbler);
 }
+.rec-decoration::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: -20px;
+  width: 9px; /* Диаметр кружка (радиус 4.5px * 2) */
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--circle-color);
+  filter: drop-shadow(0 0 5px var(--circle-color));
+}
 .header__theme-menu {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   height: 100%;
 }
-header button {
+button {
   width: 70px;
   height: 26px;
 }
-header button:hover {
+button:hover {
   border: 1px solid var(--button-color-transparent);
 }
-.header button:focus {
+button:focus {
   border: none;
   border-bottom: 1px solid var(--button-color);
 }
@@ -113,7 +119,7 @@ header button:hover {
   text-transform: lowercase;
 }
 .header__theme-menu-button:focus-visible {
-border-bottom: 1px solid var(--button-color);
+  border-bottom: 1px solid var(--button-color);
 }
 .header__theme-menu-button_active {
   border: 1px solid var(--button-color);
@@ -179,7 +185,7 @@ h4 {
   line-height: 23.4px;
   color: var(--accent-color);
   background-color: var(--h3-bc);
-  margin: 9px 4% 8px 0;
+  margin: 21px 3% 8px 3%;
 }
 img {
   margin-inline: 3%;
@@ -255,9 +261,9 @@ footer p {
   padding-bottom: 50px;
 }
 h1 {
-padding: 0;
-align-self: center;
-justify-self: start;
+  padding: 0;
+  align-self: center;
+  justify-self: start;
 }
 .header p {
   width: 47.5%;
@@ -299,6 +305,9 @@ div p {
 .h4 {
   grid-column: 2;
   padding-right: 0;
+}
+h4 {
+  margin: 9px 4% 8px 0;
 }
 .how p {
   margin-bottom: 13px;
@@ -392,7 +401,7 @@ footer p {
   padding-left: 20px;
 }
 h1 {
-  font-size: 157px;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   margin-top: 0%;
 }
 .header p {
@@ -458,7 +467,7 @@ h4:first-child {
   row-gap: 10px;
   grid-auto-rows: min-content;
 }
-.what > div > div {
+.what .what-card {
   display: flex;
   flex-direction: column;
   grid-column: auto;
@@ -475,14 +484,11 @@ h4:first-child {
   margin-inline: 2%;
 }
 .pictures {
- width: 96vw;
- max-width: 1382px;
+  width: 96vw;
+  max-width: 1382px;
 }
 footer {
   margin-top: 31px;
   min-height: 769px;
-}
-.footer p {
-  font-size: 157px;
 }
 }
